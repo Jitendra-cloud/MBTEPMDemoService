@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/odata/ns/edmx http://docs.oasis-open.org/odata/odata/v4.0/os/schemas/edmx.xsd http://docs.oasis-open.org/odata/ns/edm http://docs.oasis-open.org/odata/odata/v4.0/os/schemas/edm.xsd">
+      <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+          <edmx:Include Namespace="Org.OData.Core.V1" Alias="Core"/>
+      </edmx:Reference>
+      <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Validation.V1.xml">
+          <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
+      </edmx:Reference>
+      <edmx:Reference Uri="vocabularies/com.sap.cloud.server.odata.cache.v1.xml">
+          <edmx:Include Namespace="com.sap.cloud.server.odata.cache.v1" Alias="Cache"/>
+      </edmx:Reference>
+      <edmx:Reference Uri="vocabularies/com.sap.cloud.server.odata.security.v1.xml">
+          <edmx:Include Namespace="com.sap.cloud.server.odata.security.v1" Alias="Security"/>
+      </edmx:Reference>
+      <edmx:Reference Uri="vocabularies/com.sap.cloud.server.odata.sql.v1.xml">
+          <edmx:Include Namespace="com.sap.cloud.server.odata.sql.v1" Alias="SQL"/>
+      </edmx:Reference>
+      <edmx:DataServices>
+          <Schema Namespace="com.sap.mbtepmdemo" xmlns="http://docs.oasis-open.org/odata/ns/edm" Alias="Self">
+              <EntityContainer Name="Com_sap_mbtepmdemoService">
+              </EntityContainer>
+          </Schema>
+      </edmx:DataServices>
+  </edmx:Edmx>
